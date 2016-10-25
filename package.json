@@ -1,7 +1,7 @@
 {
   "name": "jshook",
   "description": "Tiny library to hook javascript in dom",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "repository": "inmagik/jshook",
   "main": "dist/jshook",
   "license": "MIT",
