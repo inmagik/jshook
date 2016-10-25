@@ -3,6 +3,9 @@ logs
 *.log
 npm-debug.log*
 
+# jshook build dir
+dist
+
 # Runtime data
 pids
 *.pid

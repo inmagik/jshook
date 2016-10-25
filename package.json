@@ -1,0 +1,21 @@
+{
+  "name": "jshook",
+  "description": "Tiny library to hook javascript in dom",
+  "version": "0.1.0",
+  "repository": "inmagik/jshook",
+  "main": "dist/jshook",
+  "license": "MIT",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
+    "start": "webpack-dev-server --config webpack.config.dev.js"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-object-rest-spread": "^6.16.0",
+    "babel-preset-latest": "^6.16.0",
+    "cross-env": "^3.1.3",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
