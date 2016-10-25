@@ -11,7 +11,7 @@ export default (root = document, dataKey = 'jshook') => {
       console.warn(
         `Alredy booted, register/unregister or boot actions must be ` +
         `performed before booting the first time.`
-     )
+      )
       return
     }
     return fn(...args)
@@ -39,7 +39,7 @@ export default (root = document, dataKey = 'jshook') => {
 
   // Boot hooks
   const boot = whenNotBooted(() => {
-    Array.from(root.querySelectorAll(`[data-${dataKey}]`)).forEach(element => {
+    Array.prototype.slice.call(root.querySelectorAll(`[data-${dataKey}]`)).forEach(element => {
       const key = element.getAttribute(`data-${dataKey}`)
 
       if (!isRegistered(key)) {
